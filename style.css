@@ -204,6 +204,103 @@
     border-radius: 5px;
     margin-bottom: 15px;
   }
+
+  .labs-intro {
+    max-width: 720px;
+    margin: -20px auto 30px;
+    text-align: center;
+  }
+
+  .lab-card-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: inherit;
+    text-align: left;
+    text-decoration: none;
+  }
+
+  .lab-card-link:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 4px;
+  }
+
+  .lab-category {
+    margin-bottom: 10px;
+    color: #00ffcc;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .lab-read-more {
+    margin-top: auto;
+    padding-top: 20px;
+    color: #00ffcc;
+    font-weight: bold;
+  }
+
+  .lab-detail {
+    width: 90%;
+    max-width: 900px;
+    min-height: calc(100vh - 90px);
+    margin: 0 auto;
+    padding: 48px 0 72px;
+  }
+
+  .lab-back-link {
+    display: inline-block;
+    margin-bottom: 36px;
+    color: #00ffcc;
+    text-decoration: none;
+  }
+
+  .lab-back-link:hover,
+  .lab-back-link:focus-visible {
+    text-decoration: underline;
+  }
+
+  .lab-detail h1 {
+    margin-bottom: 12px;
+    color: #00ffcc;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .lab-detail .lab-category {
+    display: block;
+  }
+
+  .lab-detail .lab-lede {
+    max-width: 760px;
+    margin-bottom: 36px;
+    font-size: 1.15rem;
+  }
+
+  .lab-detail section {
+    margin-top: 32px;
+  }
+
+  .lab-detail h2 {
+    margin-bottom: 16px;
+    text-align: left;
+    font-size: 1.6rem;
+  }
+
+  .lab-detail ol,
+  .lab-detail ul {
+    padding-left: 24px;
+  }
+
+  .lab-detail li {
+    margin: 8px 0;
+  }
+
+  .lab-detail .lab-callout {
+    padding: 18px 20px;
+    border-left: 3px solid #00ffcc;
+    background: #111;
+  }
   
   /* CASE STUDIES + BLOG + TESTIMONIALS */
   .blog-grid {
@@ -344,6 +441,10 @@
   
     .intro-video {
       max-width: 100%;
+    }
+
+    .lab-detail h1 {
+      font-size: 2rem;
     }
   }
   

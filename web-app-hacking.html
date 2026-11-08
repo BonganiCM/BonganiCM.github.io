@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web App Hacking V8, Day 1 | Bongani Young</title>
+  <meta name="description" content="Notes from day one of the Hackers-Arise Web App Hacking V8 course." />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <canvas id="matrixCanvas" aria-hidden="true"></canvas>
+  <main class="lab-detail">
+    <a class="lab-back-link" href="index.html#labs">&larr; Back to cybersecurity labs</a>
+    <span class="lab-category">Hackers-Arise course</span>
+    <h1>Web App Hacking V8, Day 1</h1>
+    <p class="lab-lede">The opening day focused on how to think before testing an application. I worked through introductory modules, studied modern web stack diagrams and started the practical lab environment.</p>
+
+    <section>
+      <h2>How a tester reasons</h2>
+      <ol>
+        <li>Understand the concept</li>
+        <li>Map the architecture</li>
+        <li>Establish normal behaviour</li>
+        <li>Identify trust boundaries</li>
+        <li>Assess for vulnerabilities</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Anatomy of a modern web application</h2>
+      <ol>
+        <li>Browser</li>
+        <li>CDN</li>
+        <li>Web application firewall</li>
+        <li>Reverse proxy or load balancer</li>
+        <li>API gateway</li>
+        <li>Microservices</li>
+        <li>Databases and caches</li>
+      </ol>
+    </section>
+
+    <section class="lab-callout">
+      <p>Each connection in the architecture represents a trust boundary. Understanding those boundaries gives a tester a sound map of the application before any testing begins.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Bongani Young.</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>

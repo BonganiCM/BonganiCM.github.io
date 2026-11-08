@@ -8,21 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   
-    /*** SOUND EFFECTS ***/
-    const clickSound = new Audio("sounds/click.mp3");
-    const errorSound = new Audio("sounds/error.mp3");
-  
-    document.querySelectorAll(".btn").forEach(button => {
-      button.addEventListener("click", () => {
-        clickSound.play().catch(() => {}); // Handle autoplay policy
-      });
-    });
-  
     const contactForm = document.getElementById("contact-form");
     if (contactForm) {
       contactForm.addEventListener("submit", event => {
         event.preventDefault();
-        errorSound.play().catch(() => {});
         alert("Thank you for your message!");
         contactForm.reset();
       });

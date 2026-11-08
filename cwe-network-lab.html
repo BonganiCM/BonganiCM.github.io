@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CWE Fully Compromised Network Lab | Bongani Young</title>
+  <meta name="description" content="A multi-host network penetration testing lab covering enumeration, analysis, lateral movement and pivoting." />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <canvas id="matrixCanvas" aria-hidden="true"></canvas>
+  <main class="lab-detail">
+    <a class="lab-back-link" href="index.html#labs">&larr; Back to cybersecurity labs</a>
+    <span class="lab-category">Network penetration testing</span>
+    <h1>CWE Fully Compromised Network Lab</h1>
+    <p class="lab-lede">A multi-host penetration test run as one complete attack chain. The lab focused on gaining initial access, enumerating hosts, analysing vulnerabilities, then moving laterally and escalating privileges across several systems.</p>
+
+    <section>
+      <h2>Attack path</h2>
+      <ol>
+        <li>Initial access</li>
+        <li>Enumeration</li>
+        <li>Vulnerability analysis</li>
+        <li>Lateral movement</li>
+        <li>Privilege escalation</li>
+        <li>Pivoting with Chisel and Socat</li>
+        <li>Access to internal services, including Grafana dashboards</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Tools and techniques</h2>
+      <p><strong>Chisel:</strong> Tunnelled traffic over HTTP to reach internal network segments.</p>
+      <p><strong>Socat:</strong> Relayed sockets and forwarded ports between hosts.</p>
+    </section>
+
+    <section class="lab-callout">
+      <p>This was a controlled training environment. The exercise brought host-level discovery, analysis and network pivoting together into a single assessment workflow.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Bongani Young.</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
