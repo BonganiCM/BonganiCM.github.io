@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1413" />
+  <title>CWE Fully Compromised Network Lab | Bongani Mokhonwana</title>
+  <meta name="description" content="A multi-host network penetration testing lab covering enumeration, analysis, lateral movement and pivoting." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../portfolio.css" />
+</head>
+<body class="portfolio-site project-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="../index.html" aria-label="Bongani Mokhonwana, home">BM<span>.</span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="../index.html#projects">Projects</a>
+        <a class="nav-contact" href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="project-detail page-width" id="main-content">
+    <a class="project-back-link" href="../index.html#projects"><span aria-hidden="true">&larr;</span> All projects</a>
+    <header class="project-hero">
+      <p class="project-kicker"><span>Lab notes</span><span aria-hidden="true">/</span><span>Network security</span></p>
+      <h1>CWE Fully Compromised Network Lab</h1>
+      <p class="project-lede">A multi-host penetration test run as one complete attack chain. The lab focused on gaining initial access, enumerating hosts, analysing vulnerabilities, then moving laterally and escalating privileges across several systems.</p>
+      <ul class="project-tags" aria-label="Project topics"><li>Network penetration testing</li><li>Controlled lab</li><li>Pivoting</li></ul>
+    </header>
+
+    <div class="project-article">
+      <section class="project-detail-section">
+        <p class="project-section-label">Assessment workflow</p>
+        <h2>Attack path</h2>
+        <ol class="project-steps">
+          <li>Initial access</li>
+          <li>Enumeration</li>
+          <li>Vulnerability analysis</li>
+          <li>Lateral movement</li>
+          <li>Privilege escalation</li>
+          <li>Pivoting with Chisel and Socat</li>
+          <li>Access to internal services, including Grafana dashboards</li>
+        </ol>
+      </section>
+
+      <section class="project-detail-section">
+        <p class="project-section-label">Tooling</p>
+        <h2>Tools and techniques</h2>
+        <div class="project-tool-grid">
+          <article><h3>Chisel</h3><p>Tunnelled traffic over HTTP to reach internal network segments.</p></article>
+          <article><h3>Socat</h3><p>Relayed sockets and forwarded ports between hosts.</p></article>
+        </div>
+      </section>
+
+      <aside class="project-callout">
+        <p class="project-section-label">Lab context</p>
+        <p>This was a controlled training environment. The exercise brought host-level discovery, analysis and network pivoting together into a single assessment workflow.</p>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="page-width footer-inner">
+      <a class="wordmark" href="../index.html" aria-label="Back to portfolio">BM<span>.</span></a>
+      <p>&copy; 2026 Bongani Mokhonwana</p>
+      <a href="../index.html#projects">More projects <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </footer>
+</body>
+</html>

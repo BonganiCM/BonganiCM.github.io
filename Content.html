@@ -3,96 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bongani - Cybersecurity Portfolio</title>
-  <meta name="description" content="Cybersecurity portfolio of Bongani, specializing in ethical hacking, penetration testing, social engineering, and exploitation." />
-  <link rel="stylesheet" href="./style.css" />
+  <meta name="theme-color" content="#0b1413" />
+  <title>News &amp; Insights | Bongani Mokhonwana</title>
+  <meta name="description" content="Cybersecurity lab recordings, interactive learning tools, and news curated by Bongani Mokhonwana." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./portfolio.css" />
+  <script src="portfolio.js" defer></script>
 </head>
-<body>
+<body class="portfolio-site insights-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="./index.html" aria-label="Bongani Mokhonwana, home">BM<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+        <a href="./index.html">Portfolio</a>
+        <a href="#recordings">Recordings</a>
+        <a href="#demo">Terminal demo</a>
+        <a class="nav-contact" href="#news">News</a>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Matrix Background Canvas -->
-  <canvas id="matrixCanvas"></canvas>
-  
-
-  <section class="">
-    <h2>Welcome to Cybersecurity Insights </h2>
+  <main id="main-content">
+    <section class="hero-section insights-hero" id="top" aria-labelledby="insights-title">
+      <div class="hero-content page-width">
+        <p class="eyebrow"><span class="status-light" aria-hidden="true"></span> Field notes <span class="eyebrow-divider">/</span> Learn by exploring</p>
+        <h1 id="insights-title">Curiosity in<br /><span>practice.</span></h1>
+        <p class="hero-copy">A collection of lab recordings, small interactive experiments, and cybersecurity reading. Each is a starting point for asking better questions.</p>
+        <div class="hero-actions">
+          <a class="action-link action-primary" href="#recordings">Explore recordings</a>
+          <a class="action-link action-secondary" href="#demo">Try the terminal demo</a>
+        </div>
+        <div class="hero-index" aria-hidden="true"><span>BM / 07</span><span>News &amp; insights</span></div>
+      </div>
     </section>
-	  
-        <a href="./index.html" class="btn">Home</a>
-    </div>
 
-<!-- PROOF OF CONCERT SECTION -->
-  <section id="PROOF OF CONCERT" class="section fade-in">
-    <div class="container">
-      <h2>PROOF OF CONCERT</h2>
-      <div class="blog-grid">
-        <div class="blog-post">
-	<video controls class="intro-video" poster="images/intro-thumb.jpg">
-        <source src="love you virus.mkv" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <section class="content-section insights-recordings" id="recordings" aria-labelledby="recordings-title">
+      <div class="page-width">
+        <div class="projects-heading section-heading reveal">
+          <div>
+            <p class="section-index">01 <span>/</span> Recordings</p>
+            <h2 id="recordings-title">Learning through<br /><span>hands-on labs.</span></h2>
           </div>
-        <div class="blog-post">
-          <video controls class="intro-video" poster="images/intro-thumb.jpg">
-        <source src="EternalBlue Exploit.mkv" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+          <p class="projects-intro">A lab recording from a controlled environment. Browser support for MKV video varies; use the download link if playback is unavailable.</p>
+        </div>
+        <div class="recording-grid">
+          <article class="recording-card reveal">
+            <div class="recording-frame">
+              <video controls preload="metadata" aria-label="EternalBlue lab recording">
+                <source src="projects/EternalBlue%20Exploit.mkv" type="video/x-matroska" />
+                Your browser cannot play this video. Use the download link below.
+              </video>
+            </div>
+            <div class="recording-copy">
+              <p class="project-meta"><span>Controlled lab</span><span>Recording / 01</span></p>
+              <h3>EternalBlue lab demonstration</h3>
+              <p>A recorded security exercise for learning and discussion. Only test systems you own or have explicit permission to assess.</p>
+              <a class="text-link" href="projects/EternalBlue%20Exploit.mkv" download>Download the recording <span aria-hidden="true">&darr;</span></a>
+            </div>
+          </article>
+          <aside class="recording-note reveal" aria-label="Lab safety note">
+            <p class="section-index">A note on responsible practice</p>
+            <h3>Keep experiments in the lab.</h3>
+            <p>These materials are for education in isolated, authorized environments. Never use security techniques against systems without permission.</p>
+            <a class="text-link" href="./index.html#projects">Explore project notes <span aria-hidden="true">&rarr;</span></a>
+          </aside>
+        </div>
+      </div>
+    </section>
 
- </div>
-        <div class="blog-post">
-<video controls class="intro-video" poster="images/intro-thumb.jpg">
-        <source src="intro.webm" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
- </div>
-       <a href"="Content.html"</a>
+    <section class="content-section insights-demo" id="demo" aria-labelledby="demo-title">
+      <div class="page-width terminal-layout">
+        <div class="section-heading reveal">
+          <p class="section-index">02 <span>/</span> Interactive demo</p>
+          <h2 id="demo-title">A terminal, minus<br /><span>the sharp edges.</span></h2>
+          <p class="terminal-description">Try a few commands in this simulated terminal. It runs only in this page and does not access your device.</p>
+          <p class="terminal-hint" id="terminal-hint">Try <code>help</code>, <code>whoami</code>, <code>ls</code>, or <code>clear</code>.</p>
+        </div>
+        <div class="terminal-card reveal">
+          <div class="terminal-topbar">
+            <span class="terminal-lights" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span>practice-shell / local simulation</span>
+          </div>
+          <div class="terminal-screen">
+            <div class="terminal-output" id="terminal-output" role="log" aria-live="polite">
+              <p class="terminal-welcome">Welcome. Type <code>help</code> to see available commands.</p>
+            </div>
+            <form class="terminal-form" id="terminal-form">
+              <label for="terminal-input"><span aria-hidden="true">guest@lab:~$</span><span class="visually-hidden">Enter a demo command</span></label>
+              <input id="terminal-input" name="command" type="text" autocomplete="off" spellcheck="false" aria-describedby="terminal-hint" />
+              <button type="submit">Run</button>
+            </form>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <section class="content-section insights-news" id="news" aria-labelledby="news-title">
+      <div class="page-width news-panel reveal">
+        <div>
+          <p class="section-index">03 <span>/</span> Stay informed</p>
+          <h2 id="news-title">Cybersecurity,<br /><span>in the headlines.</span></h2>
+          <p>Visit the external news page for current stories and updates from across the security community.</p>
+        </div>
+        <a class="action-link action-primary" href="https://malobisait.co.za/news.php" target="_blank" rel="noopener noreferrer">Open cybersecurity news <span aria-hidden="true">&nearr;</span></a>
       </div>
-      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-width footer-inner">
+      <a class="wordmark" href="#top" aria-label="Back to top">BM<span>.</span></a>
+      <p>&copy; 2026 Bongani Mokhonwana</p>
+      <a href="./index.html">Back to portfolio <span aria-hidden="true">&rarr;</span></a>
     </div>
-  </section>
-  
-
-
-
-
-      <!-- INTERACTIVE TERMINAL DEMO -->
-  <section id="demo" class="section fade-in">
-    <div class="container">
-      <h2>Try My Hacking Terminal</h2>
-      <div class="terminal">
-        <div class="terminal-header">root@cyber-expert:~#</div>
-        <textarea id="terminal-input" placeholder="Type 'help' to start..."></textarea>
-        <div id="terminal-output"></div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-<!-- LIVE CYBERSECURITY NEWS SECTION -->
-<section id="news" class="section fade-in">
-    <div class="container">
-        <h2>Cybersecurity News</h2>
-      <a class="btn" href="https://malobisait.co.za/news.php" target="_blank" rel="noopener noreferrer">Open Cybersecurity News</a>
-    </div>
-</section>
-
-
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2026 Bongani. All rights reserved.</p>
-    <p><a href="#hero">Back to Top</a></p>
   </footer>
-
-  <script src="scripts.js"></script>
 </body>
-
 </html>
-
-
-

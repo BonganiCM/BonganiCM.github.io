@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1413" />
+  <title>Web App Hacking V8, Day 1 | Bongani Mokhonwana</title>
+  <meta name="description" content="Notes from day one of the Hackers-Arise Web App Hacking V8 course." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../portfolio.css" />
+</head>
+<body class="portfolio-site project-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="../index.html" aria-label="Bongani Mokhonwana, home">BM<span>.</span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="../index.html#projects">Projects</a>
+        <a class="nav-contact" href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="project-detail page-width" id="main-content">
+    <a class="project-back-link" href="../index.html#projects"><span aria-hidden="true">&larr;</span> All projects</a>
+    <header class="project-hero">
+      <p class="project-kicker"><span>Course notes</span><span aria-hidden="true">/</span><span>Web application security</span></p>
+      <h1>Web App Hacking V8, Day 1</h1>
+      <p class="project-lede">The opening day focused on how to think before testing an application. I worked through introductory modules, studied modern web stack diagrams and started the practical lab environment.</p>
+      <ul class="project-tags" aria-label="Project topics"><li>Hackers-Arise</li><li>Application architecture</li><li>Trust boundaries</li></ul>
+    </header>
+
+    <div class="project-article">
+      <section class="project-detail-section">
+        <p class="project-section-label">Method</p>
+        <h2>How a tester reasons</h2>
+        <ol class="project-steps">
+          <li>Understand the concept</li>
+          <li>Map the architecture</li>
+          <li>Establish normal behaviour</li>
+          <li>Identify trust boundaries</li>
+          <li>Assess for vulnerabilities</li>
+        </ol>
+      </section>
+
+      <section class="project-detail-section">
+        <p class="project-section-label">Architecture</p>
+        <h2>Anatomy of a modern web application</h2>
+        <ol class="project-steps">
+          <li>Browser</li>
+          <li>CDN</li>
+          <li>Web application firewall</li>
+          <li>Reverse proxy or load balancer</li>
+          <li>API gateway</li>
+          <li>Microservices</li>
+          <li>Databases and caches</li>
+        </ol>
+      </section>
+
+      <aside class="project-callout">
+        <p class="project-section-label">Key takeaway</p>
+        <p>Each connection in the architecture represents a trust boundary. Understanding those boundaries gives a tester a sound map of the application before any testing begins.</p>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="page-width footer-inner">
+      <a class="wordmark" href="../index.html" aria-label="Back to portfolio">BM<span>.</span></a>
+      <p>&copy; 2026 Bongani Mokhonwana</p>
+      <a href="../index.html#projects">More projects <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </footer>
+</body>
+</html>
