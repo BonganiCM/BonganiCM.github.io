@@ -1843,3 +1843,141 @@ body.portfolio-site a {
     transition: none;
   }
 }
+
+.realwin-page .project-hero {
+  background:
+    radial-gradient(ellipse at 92% 10%, rgba(226, 221, 130, 0.13), transparent 40%),
+    linear-gradient(130deg, #1d241e, #0d1715 68%);
+}
+
+.realwin-page .project-kicker,
+.realwin-page .project-section-label {
+  color: var(--acid);
+}
+
+.realwin-page .project-back-link span {
+  color: var(--acid);
+}
+
+.realwin-page .project-tags li {
+  border-color: rgba(226, 221, 130, 0.24);
+}
+
+.realwin-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 24px;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.realwin-facts > div {
+  display: flex;
+  min-height: 76px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding: 14px 18px;
+  background: var(--night-soft);
+}
+
+.realwin-facts span,
+.realwin-risk-label {
+  color: var(--muted);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.realwin-facts strong {
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.realwin-risk-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.realwin-risk-grid article {
+  min-height: 190px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  background: var(--night-soft);
+}
+
+.realwin-risk-label {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--acid);
+}
+
+.realwin-risk-grid h3 {
+  margin: 0 0 8px;
+  color: var(--text);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.realwin-risk-grid p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.realwin-defense-list {
+  display: grid;
+  gap: 0;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.realwin-defense-list li {
+  position: relative;
+  padding: 15px 12px 15px 32px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.realwin-defense-list li::before {
+  position: absolute;
+  top: 16px;
+  left: 5px;
+  color: var(--acid);
+  content: "->";
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+}
+
+.realwin-scope-note {
+  border-color: rgba(226, 221, 130, 0.22);
+  border-left-color: var(--acid);
+  background: rgba(226, 221, 130, 0.05);
+}
+
+.realwin-scope-note > p:last-child {
+  color: #d3ddd6;
+}
+
+@media (max-width: 700px) {
+  .realwin-facts,
+  .realwin-risk-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .realwin-risk-grid article {
+    min-height: 0;
+  }
+
+  .realwin-risk-label {
+    margin-bottom: 12px;
+  }
+}
