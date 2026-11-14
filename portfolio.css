@@ -39,6 +39,14 @@ body.portfolio-site a {
   color: inherit;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background: rgba(11, 20, 19, 0.6);
+  filter: contrast(1.08) saturate(1.08) brightness(1.03);
+}
+
 .page-width {
   width: min(var(--page-width), calc(100% - 64px));
   margin-inline: auto;
@@ -461,6 +469,56 @@ body.portfolio-site a {
   font-size: 14px;
 }
 
+.principles-section {
+  background: var(--night-soft);
+}
+
+.principles-section .section-heading {
+  margin-bottom: 32px;
+}
+
+.principles-section .section-heading h2 {
+  color: var(--text);
+}
+
+.principles-section .section-heading > p:last-child {
+  margin: 12px 0 0;
+  color: var(--muted);
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.principle-card {
+  display: flex;
+  min-height: 190px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 24px;
+  border: 1px solid var(--line);
+  background: rgba(23, 35, 33, 0.7);
+}
+
+.principle-card p {
+  margin: 0;
+  color: var(--text);
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.principle-card cite {
+  margin-top: 24px;
+  color: var(--mint);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
 .projects-section {
   background: var(--night);
 }
@@ -560,6 +618,24 @@ body.portfolio-site a {
   transition: transform 280ms ease;
 }
 
+.project-image.ceh-badge-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #172321;
+}
+
+.project-image.oxcon-logo-panel {
+  background: var(--night);
+}
+
+.project-image.ceh-badge-panel img,
+.project-image.ctia-logo-panel img,
+.project-image.oxcon-logo-panel img {
+  object-fit: contain;
+  filter: none;
+}
+
 .project-card:hover .project-image img {
   transform: scale(1.035);
 }
@@ -614,6 +690,111 @@ body.portfolio-site a {
   color: var(--muted);
 }
 
+.training-posts {
+  margin-top: 72px;
+  padding-top: 42px;
+  border-top: 1px solid var(--line);
+}
+
+.training-posts[hidden] {
+  display: none;
+}
+
+.training-posts .section-heading {
+  margin-bottom: 28px;
+}
+
+.training-posts-subtitle {
+  margin: 12px 0 0;
+  color: var(--mint);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.archive-topic-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.archive-topic-select {
+  width: min(100%, 440px);
+  min-height: 42px;
+  margin-bottom: 24px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: var(--night-soft);
+  color: var(--text);
+  font: inherit;
+  font-size: 13px;
+}
+
+.archive-topic-select:focus-visible {
+  outline: 2px solid var(--mint);
+  outline-offset: 2px;
+}
+
+.training-post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.training-post-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--night-soft);
+}
+
+.training-post-card[hidden] {
+  display: none;
+}
+
+.training-post-media {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 6px;
+  padding: 8px 8px 0;
+}
+
+.training-post-media img {
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  min-height: 120px;
+  object-fit: contain;
+  background: var(--night);
+}
+
+.training-post-copy {
+  padding: 16px;
+}
+
+.training-post-category,
+.training-post-date {
+  margin: 0 0 9px;
+  color: var(--mint);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.training-post-date {
+  color: var(--muted);
+}
+
+.training-post-text {
+  margin: 0;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
 .credentials-section {
   background: var(--paper-soft);
 }
@@ -623,6 +804,16 @@ body.portfolio-site a {
   grid-template-columns: 0.9fr 1.1fr;
   gap: 80px;
   align-items: start;
+}
+
+.credential-feature {
+  display: grid;
+  gap: 28px;
+}
+
+.credential-highlight + .credential-highlight {
+  padding-top: 28px;
+  border-top: 1px solid var(--line-dark);
 }
 
 .credential-status {
@@ -642,7 +833,7 @@ body.portfolio-site a {
   line-height: 1.25;
 }
 
-.credential-feature > p:not(.credential-status) {
+.credential-feature p:not(.credential-status) {
   max-width: 600px;
   margin: 0 0 20px;
   color: var(--muted-dark);
@@ -1013,6 +1204,7 @@ body.portfolio-site a {
   }
 
   .skill-grid,
+  .principles-grid,
   .project-grid {
     grid-template-columns: 1fr;
   }

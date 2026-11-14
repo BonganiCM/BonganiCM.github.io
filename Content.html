@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0b1413" />
-  <title>News &amp; Insights | Bongani Mokhonwana</title>
-  <meta name="description" content="Cybersecurity lab recordings, interactive learning tools, and news curated by Bongani Mokhonwana." />
+  <title>Pentest Lab Notes | Bongani Mokhonwana</title>
+  <meta name="description" content="Pentest lab notes, security recordings, and offensive security learning by Bongani Mokhonwana." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -23,8 +23,8 @@
       <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
         <a href="./index.html">Portfolio</a>
         <a href="#recordings">Recordings</a>
-        <a href="#demo">Terminal demo</a>
-        <a class="nav-contact" href="#news">News</a>
+        <a href="#demo">Demo lab</a>
+        <a class="nav-contact" href="#news">Notes</a>
       </nav>
     </div>
   </header>
@@ -32,14 +32,14 @@
   <main id="main-content">
     <section class="hero-section insights-hero" id="top" aria-labelledby="insights-title">
       <div class="hero-content page-width">
-        <p class="eyebrow"><span class="status-light" aria-hidden="true"></span> Field notes <span class="eyebrow-divider">/</span> Learn by exploring</p>
-        <h1 id="insights-title">Curiosity in<br /><span>practice.</span></h1>
-        <p class="hero-copy">A collection of lab recordings, small interactive experiments, and cybersecurity reading. Each is a starting point for asking better questions.</p>
+        <p class="eyebrow"><span class="status-light" aria-hidden="true"></span> Lab notes <span class="eyebrow-divider">/</span> Offensive security</p>
+        <h1 id="insights-title">Pentest<br /><span>field notes.</span></h1>
+        <p class="hero-copy">A collection of offensive-security recordings, targeted learning exercises, and practical notes from security testing work. Each item is a snapshot of how I explore attack paths and document findings.</p>
         <div class="hero-actions">
           <a class="action-link action-primary" href="#recordings">Explore recordings</a>
-          <a class="action-link action-secondary" href="#demo">Try the terminal demo</a>
+          <a class="action-link action-secondary" href="#demo">Try the demo lab</a>
         </div>
-        <div class="hero-index" aria-hidden="true"><span>BM / 07</span><span>News &amp; insights</span></div>
+        <div class="hero-index" aria-hidden="true"><span>BM / 07</span><span>Pentest notes</span></div>
       </div>
     </section>
 
@@ -48,32 +48,68 @@
         <div class="projects-heading section-heading reveal">
           <div>
             <p class="section-index">01 <span>/</span> Recordings</p>
-            <h2 id="recordings-title">Learning through<br /><span>hands-on labs.</span></h2>
+            <h2 id="recordings-title">Selected work<br /><span>and field notes.</span></h2>
           </div>
-          <p class="projects-intro">A lab recording from a controlled environment. Browser support for MKV video varies; use the download link if playback is unavailable.</p>
+          <p class="projects-intro">Labs, courses, and learning posts focused on hands-on security work. Each item is a practical thread from the archive.</p>
         </div>
-        <div class="recording-grid">
-          <article class="recording-card reveal">
-            <div class="recording-frame">
-              <video controls preload="metadata" aria-label="EternalBlue lab recording">
-                <source src="projects/EternalBlue%20Exploit.mkv" type="video/x-matroska" />
-                Your browser cannot play this video. Use the download link below.
-              </video>
-            </div>
-            <div class="recording-copy">
-              <p class="project-meta"><span>Controlled lab</span><span>Recording / 01</span></p>
-              <h3>EternalBlue lab demonstration</h3>
-              <p>A recorded security exercise for learning and discussion. Only test systems you own or have explicit permission to assess.</p>
-              <a class="text-link" href="projects/EternalBlue%20Exploit.mkv" download>Download the recording <span aria-hidden="true">&darr;</span></a>
-            </div>
+
+        <div class="project-filters reveal" role="group" aria-label="Filter project work">
+          <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">All work</button>
+          <button type="button" class="filter-button" data-filter="lab" aria-pressed="false">Labs</button>
+        </div>
+
+        <div class="project-grid" id="project-grid">
+          <article class="project-card reveal" data-category="training">
+            <a class="project-link" href="projects/cwe-network-lab.html">
+              <div class="project-image"><img src="images/linux.JPG" alt="Linux desktop lab environment" loading="lazy" /></div>
+              <div class="project-body">
+                <p class="project-meta"><span>Web app security</span><span>Lab / Posted Oct 31, 2026</span></p>
+                <h3>Web App Hacking v8, Day 1</h3>
+                <p>Foundational testing concepts, modern application architecture, and the trust boundaries testers need to understand.</p>
+                <span class="project-cta">Read course notes <span aria-hidden="true">&rarr;</span></span>
+              </div>
+            </a>
           </article>
-          <aside class="recording-note reveal" aria-label="Lab safety note">
-            <p class="section-index">A note on responsible practice</p>
-            <h3>Keep experiments in the lab.</h3>
-            <p>These materials are for education in isolated, authorized environments. Never use security techniques against systems without permission.</p>
-            <a class="text-link" href="./index.html#projects">Explore project notes <span aria-hidden="true">&rarr;</span></a>
-          </aside>
+
+          <article class="project-card reveal" data-category="training">
+            <a class="project-link" href="training.html?id=2101051119958983167">
+              <div class="project-image"><img src="images/Shodan.jpg" alt="Network reconnaissance interface" loading="lazy" /></div>
+              <div class="project-body">
+                <p class="project-meta"><span>Penetration testing</span><span>Training / Posted Sep 18, 2026</span></p>
+                <h3>CWE Training, Day 1</h3>
+                <p>A structured introduction to scanning, enumeration, vulnerability analysis, and building a repeatable assessment workflow.</p>
+                <span class="project-cta">Read training notes <span aria-hidden="true">&rarr;</span></span>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card reveal" data-category="training">
+            <a class="project-link" href="training.html?id=2043041110260396201">
+              <div class="project-image"><img src="images/security.jpg" alt="Security training" loading="lazy" /></div>
+              <div class="project-body">
+                <p class="project-meta"><span>CompTIA Security+ SY0-701</span><span>Completed Apr 11, 2026</span></p>
+                <h3>Security+ Bootcamp</h3>
+                <p>Completed the Hackers-Arise bootcamp, as announced in the training completion post.</p>
+                <span class="project-cta">View completion post <span aria-hidden="true">&rarr;</span></span>
+              </div>
+            </a>
+          </article>
         </div>
+
+        <p class="filter-empty" id="filter-empty" hidden>No work in this category yet.</p>
+
+        <section class="training-posts" id="training-posts" aria-labelledby="training-posts-title">
+          <div class="section-heading">
+            <p class="section-index">Archive</p>
+            <h2 id="training-posts-title">Full post history</h2>
+            <p class="training-posts-subtitle">All posts · 99</p>
+          </div>
+          <label class="archive-topic-label" for="archive-topic-filter">Browse posts by course or topic</label>
+          <select class="archive-topic-select" id="archive-topic-filter" aria-label="Filter post history by course or topic">
+            <option value="all">All posts · 99</option>
+          </select>
+          <div class="training-post-grid" id="training-post-grid"></div>
+        </section>
       </div>
     </section>
 

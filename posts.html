@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1413" />
+  <title>Posts Archive | Bongani Mokhonwana</title>
+  <meta name="description" content="This archive page has been removed from the site." />
+  <meta http-equiv="refresh" content="0; url=./index.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./portfolio.css" />
+  <style>
+    .posts-page .page-width {
+      max-width: 1100px;
+    }
+
+    .posts-intro {
+      max-width: 740px;
+      margin-top: 1rem;
+      color: rgba(226, 232, 240, 0.8);
+      font-size: 1.08rem;
+      line-height: 1.75;
+    }
+
+    .posts-count {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.5rem 0.8rem;
+      background: rgba(22, 35, 44, 0.7);
+      border: 1px solid rgba(124, 147, 167, 0.25);
+      border-radius: 999px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #c9d6df;
+    }
+
+    .posts-count .status-light {
+      width: 0.55rem;
+      height: 0.55rem;
+      border-radius: 50%;
+      background: #7af7a4;
+      box-shadow: 0 0 12px rgba(122, 247, 164, 0.8);
+    }
+
+    .post-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 24px;
+    }
+
+    .post-filter {
+      min-height: 38px;
+      padding: 7px 14px;
+      border: 1px solid rgba(128, 158, 180, 0.3);
+      background: transparent;
+      color: #c9d6df;
+      cursor: pointer;
+      font: inherit;
+      font-size: 12px;
+    }
+
+    .post-filter:hover,
+    .post-filter:focus-visible,
+    .post-filter.is-active {
+      border-color: #7af7a4;
+      color: #7af7a4;
+    }
+
+    .post-filter.is-active {
+      background: rgba(122, 247, 164, 0.1);
+    }
+
+    .post-feed {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2.5rem;
+    }
+
+    .post-card {
+      background: rgba(11, 20, 19, 0.72);
+      border: 1px solid rgba(128, 158, 180, 0.18);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(2, 8, 12, 0.18);
+      transition: transform 180ms ease, border-color 180ms ease;
+    }
+
+    .post-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(122, 161, 255, 0.35);
+    }
+
+    .post-card-body {
+      padding: 1.2rem 1.2rem 1.4rem;
+    }
+
+    .post-date {
+      margin: 0 0 0.8rem;
+      color: #9fb8c7;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .post-category {
+      margin: 0 0 0.75rem !important;
+      color: #7af7a4 !important;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.7rem !important;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .post-card p {
+      margin: 0;
+      color: rgba(232, 240, 242, 0.9);
+      line-height: 1.7;
+      font-size: 0.97rem;
+      white-space: pre-wrap;
+    }
+
+    .post-card p + p {
+      margin-top: 0.8rem;
+    }
+
+    .post-media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.75rem;
+      padding: 0.7rem 0.7rem 0;
+    }
+
+    .post-media-grid img {
+      display: block;
+      width: 100%;
+      max-width: 3840px;
+      height: auto;
+      min-height: 220px;
+      object-fit: contain;
+      border-radius: 10px;
+      border: 1px solid rgba(123, 143, 169, 0.22);
+      background: rgba(7, 10, 13, 0.6);
+    }
+  </style>
+</head>
+<body class="portfolio-site posts-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="./index.html" aria-label="Bongani Mokhonwana, home">BM<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+        <a href="./index.html#about">About</a>
+        <a href="./index.html#projects">Projects</a>
+        <a href="./Content.html">Insights</a>
+        <a class="nav-contact" href="./index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero-section insights-hero" aria-labelledby="posts-title">
+      <div class="hero-content page-width">
+        <p class="eyebrow"><span class="status-light" aria-hidden="true"></span> Page removed</p>
+        <h1 id="posts-title">This page has been removed.</h1>
+        <p class="posts-intro">You are being redirected to the homepage.</p>
+        <div class="posts-count"><span class="status-light" aria-hidden="true"></span> <span id="post-count">Redirecting…</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-width footer-inner">
+      <a class="wordmark" href="./index.html" aria-label="Back to portfolio">BM<span>.</span></a>
+      <p>&copy; 2026 Bongani Mokhonwana</p>
+      <a href="./index.html#projects">More work <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </footer>
+
+  <script src="./assets/tweets-data.js" defer></script>
+  <script>
+    function formatTimestamp(value) {
+      if (!value) return 'Unknown date';
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) {
+        return value;
+      }
+      return new Intl.DateTimeFormat('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
+      }).format(date);
+    }
+
+    function decodeHtmlEntities(value) {
+      const textarea = document.createElement('textarea');
+      textarea.innerHTML = value;
+      return textarea.value;
+    }
+
+    function cleanText(value) {
+      const text = decodeHtmlEntities(value || '').replace(/^:\s*/, '').replace(/\s+([,.;:!?])/g, '$1').replace(/\s{2,}/g, ' ').trim();
+      return text || 'Shared post';
+    }
+
+    function classifyTweet(tweet) {
+      const text = cleanText(tweet.text);
+      if (/\b(training|course|bootcamp|web app hacking|ctia|certified|osint|security awareness|risk management|phishing analysis|malware analyst|powershell for hackers|criminal law for hackers|active directory for hackers|starter bundle|roadmap|investigating a cyber attack)\b/i.test(text)) {
+        return 'training';
+      }
+      if (/\b(honeypot|nessus|vulnerability scanning|cwe|scada|rfid|active directory attack chain|ble scanning|realwin|network lab|lab)\b/i.test(text)) {
+        return 'lab';
+      }
+      return 'other';
+    }
+
+    function hasCompletionEvidence(tweet) {
+      return /\bmission complete\b|\bjust finished\b|\bcompleted (?:the|my|a)\b|\breached full network compromise\b|certified 🍾/i.test(cleanText(tweet.text));
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const feed = document.getElementById('posts-feed');
+      const count = document.getElementById('post-count');
+      const filterButtons = document.querySelectorAll('.post-filter');
+      const tweets = Array.isArray(window.tweetsArchive) ? window.tweetsArchive : [];
+
+      count.textContent = tweets.length + (tweets.length === 1 ? ' post' : ' posts');
+
+      tweets.forEach(function (tweet) {
+        const article = document.createElement('article');
+        article.className = 'post-card reveal';
+        article.id = 'post-' + tweet.id;
+        const category = classifyTweet(tweet);
+        article.dataset.category = category;
+
+        const mediaGrid = document.createElement('div');
+        mediaGrid.className = 'post-media-grid';
+
+        const media = Array.isArray(tweet.media) ? tweet.media : [];
+        media.forEach(function (url) {
+          const img = document.createElement('img');
+          img.src = url;
+          img.alt = cleanText(tweet.text);
+          img.loading = 'lazy';
+          mediaGrid.appendChild(img);
+        });
+
+        const body = document.createElement('div');
+        body.className = 'post-card-body';
+
+        const date = document.createElement('p');
+        date.className = 'post-date';
+        date.textContent = (hasCompletionEvidence(tweet) ? 'Completed · ' : 'Posted · ') + formatTimestamp(tweet.date);
+
+        const categoryLabel = document.createElement('p');
+        categoryLabel.className = 'post-category';
+        categoryLabel.textContent = category === 'lab' ? 'Labs' : category === 'training' ? 'Training' : 'Other';
+
+        const content = document.createElement('p');
+        content.textContent = cleanText(tweet.text);
+
+        body.appendChild(categoryLabel);
+        body.appendChild(date);
+        body.appendChild(content);
+        if (category === 'training') {
+          const detailLink = document.createElement('a');
+          detailLink.className = 'text-link';
+          detailLink.href = './training.html?id=' + encodeURIComponent(tweet.id);
+          detailLink.textContent = 'View training details';
+          body.appendChild(detailLink);
+        }
+
+        if (media.length) {
+          article.appendChild(mediaGrid);
+        }
+        article.appendChild(body);
+        feed.appendChild(article);
+      });
+
+      filterButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          const filter = button.dataset.filter;
+          filterButtons.forEach(function (filterButton) {
+            const isActive = filterButton === button;
+            filterButton.classList.toggle('is-active', isActive);
+            filterButton.setAttribute('aria-pressed', String(isActive));
+          });
+          feed.querySelectorAll('.post-card').forEach(function (card) {
+            card.hidden = filter !== 'all' && card.dataset.category !== filter;
+          });
+        });
+      });
+
+      const requestedFilter = new URLSearchParams(window.location.search).get('filter');
+      if (requestedFilter === 'training' || requestedFilter === 'lab') {
+        const filterButton = Array.from(filterButtons).find(function (button) {
+          return button.dataset.filter === requestedFilter;
+        });
+        if (filterButton) filterButton.click();
+      }
+    });
+  </script>
+</body>
+</html>

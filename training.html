@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1413" />
+  <title>Training detail | Bongani Mokhonwana</title>
+  <meta name="description" content="Training notes from Bongani Mokhonwana's post archive." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./portfolio.css" />
+  <style>
+    .training-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .training-images img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid rgba(128, 158, 180, 0.25);
+      border-radius: 12px;
+      background: #101a19;
+    }
+
+    .training-error {
+      color: #a63d40;
+    }
+  </style>
+</head>
+<body class="portfolio-site project-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="./index.html" aria-label="Bongani Mokhonwana, home">BM<span>.</span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="./index.html#projects">Projects</a>
+        <a href="./Content.html">Insights</a>
+        <a class="nav-contact" href="./index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="project-detail page-width" id="main-content">
+    <a class="project-back-link" href="./index.html#projects"><span aria-hidden="true">&larr;</span> All work</a>
+    <header class="project-hero">
+      <p class="project-kicker"><span>Training detail</span><span aria-hidden="true">/</span><span id="training-date">Archive post</span></p>
+      <h1 id="training-title">Loading training post…</h1>
+      <p class="project-lede" id="training-description"></p>
+      <ul class="project-tags" id="training-tags" aria-label="Training category"></ul>
+    </header>
+    <div class="project-article">
+      <section class="project-detail-section">
+        <p class="project-section-label">Post details</p>
+        <h2 id="training-summary-heading">Training post</h2>
+        <p id="training-summary"></p>
+      </section>
+      <section class="project-detail-section" id="training-media-section" hidden>
+        <p class="project-section-label">Attached material</p>
+        <h2>Images from this post</h2>
+        <div class="training-images" id="training-images"></div>
+      </section>
+      <aside class="project-callout">
+        <p class="project-section-label">Date note</p>
+        <p id="training-date-note"></p>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="page-width footer-inner">
+      <a class="wordmark" href="./index.html" aria-label="Back to portfolio">BM<span>.</span></a>
+      <p>&copy; 2026 Bongani Mokhonwana</p>
+      <a href="./index.html#projects">More work <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </footer>
+  <script src="./assets/tweets-data.js"></script>
+  <script>
+    function decodeEntities(value) {
+      const textarea = document.createElement('textarea');
+      textarea.innerHTML = value || '';
+      return textarea.value;
+    }
+
+    function cleanText(value) {
+      return decodeEntities(value)
+        .replace(/https?:\/\/\S+/g, '')
+        .replace(/@[A-Za-z0-9_]+/g, '')
+        .replace(/#[A-Za-z0-9_]+/g, '')
+        .replace(/\s+([,.;:!?])/g, '$1')
+        .replace(/\s{2,}/g, ' ')
+        .trim();
+    }
+
+    function formatDate(value) {
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return 'Date unavailable';
+      return new Intl.DateTimeFormat('en', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      }).format(date);
+    }
+
+    function isTrainingPost(tweet) {
+      return /\b(training|course|bootcamp|web app hacking|ctia|certified|osint|security awareness|risk management|phishing analysis|malware analyst|powershell for hackers|criminal law for hackers|active directory for hackers|starter bundle|roadmap|investigating a cyber attack)\b/i.test(cleanText(tweet.text));
+    }
+
+    function isCompletionPost(tweet) {
+      return /\bmission complete\b|\bjust finished\b|\bcompleted (?:the|my|a)\b|\breached full network compromise\b|certified 🍾/i.test(cleanText(tweet.text));
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const params = new URLSearchParams(window.location.search);
+      const tweetId = params.get('id');
+      const tweet = Array.isArray(window.tweetsArchive)
+        ? window.tweetsArchive.find(function (item) { return item.id === tweetId; })
+        : null;
+
+      if (!tweet || !isTrainingPost(tweet)) {
+        document.getElementById('training-title').textContent = 'Training post not found';
+        document.getElementById('training-description').textContent = 'This training entry could not be found in the archive.';
+        document.getElementById('training-summary').textContent = 'Choose a training entry from the archive to view its details.';
+        document.getElementById('training-date-note').textContent = 'No date is available for this entry.';
+        document.getElementById('training-media-section').hidden = true;
+        return;
+      }
+
+      const text = cleanText(tweet.text) || 'Training post';
+      const completed = isCompletionPost(tweet);
+      const date = formatDate(tweet.date);
+      const title = text.length > 78 ? text.slice(0, 75).trimEnd() + '…' : text;
+
+      document.title = title + ' | Training | Bongani Mokhonwana';
+      document.getElementById('training-title').textContent = title;
+      document.getElementById('training-description').textContent = text;
+      document.getElementById('training-date').textContent = date;
+      document.getElementById('training-summary-heading').textContent = title;
+      document.getElementById('training-summary').textContent = text;
+      document.getElementById('training-date-note').textContent = completed
+        ? 'This post explicitly reports completion: ' + date + '.'
+        : 'This is the post date: ' + date + '. The archive does not confirm that the training was completed.';
+
+      const tags = document.getElementById('training-tags');
+      ['Training', completed ? 'Completion reported' : 'Archive post'].forEach(function (label) {
+        const tag = document.createElement('li');
+        tag.textContent = label;
+        tags.appendChild(tag);
+      });
+
+      const media = Array.isArray(tweet.media) ? tweet.media : [];
+      const imageContainer = document.getElementById('training-images');
+      media.forEach(function (url, index) {
+        const image = document.createElement('img');
+        image.src = url;
+        image.alt = title + ' image ' + (index + 1);
+        image.loading = 'lazy';
+        imageContainer.appendChild(image);
+      });
+      document.getElementById('training-media-section').hidden = media.length === 0;
+    });
+  </script>
+</body>
+</html>

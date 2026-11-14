@@ -106,7 +106,7 @@ CertificationEC-Council
 
 ### Certified Threat Intelligence Analyst (CTIA)
 
-I completed the CTIA certification, which covers the full threat intelligence lifecycle. Most of my effort went into the collection and analysis phases, where raw indicators and open-source data become intelligence that a SOC or a decision-maker can act on.
+I am currently working toward the CTIA certification, which covers the full threat intelligence lifecycle. My studies focus on the collection and analysis phases, where raw indicators and open-source data become intelligence that a SOC or a decision-maker can act on.
 
 Intelligence lifecycle
 

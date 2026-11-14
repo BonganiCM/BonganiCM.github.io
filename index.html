@@ -4,12 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0b1413" />
-  <title>Bongani Mokhonwana | Cybersecurity Portfolio</title>
-  <meta name="description" content="Bongani Mokhonwana's cybersecurity portfolio: hands-on work in penetration testing, web security, network labs and threat intelligence." />
+  <title>Bongani Mokhonwana | Penetration Tester Portfolio</title>
+  <meta name="description" content="Bongani Mokhonwana's penetration tester portfolio: offensive security labs, web application testing, network exploitation, and practical security research." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./portfolio.css" />
+  <script src="assets/tweets-data.js" defer></script>
   <script src="portfolio.js" defer></script>
 </head>
 <body class="portfolio-site">
@@ -22,11 +23,10 @@
       </button>
       <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#approach">Approach</a>
-        <a href="#projects">Projects</a>
-        <a href="#credentials">Credentials</a>
-        <a href="Content.html">News &amp; insights</a>
+        <a href="#skills">Capabilities</a>
+        <a href="#approach">Methodology</a>
+        <a href="#demos">Demos</a>
+        <a href="#credentials">Certifications</a>
         <a class="nav-contact" href="#contact">Contact</a>
       </nav>
     </div>
@@ -35,15 +35,15 @@
   <main id="main-content">
     <section class="hero-section" id="home" aria-labelledby="hero-title">
       <div class="hero-content page-width">
-        <p class="eyebrow"><span class="status-light" aria-hidden="true"></span> Security portfolio <span class="eyebrow-divider">/</span> 2026</p>
+        <p class="eyebrow"><span class="status-light" aria-hidden="true"></span> Penetration tester portfolio <span class="eyebrow-divider">/</span> 2026</p>
         <h1 id="hero-title">Bongani<br /><span>Mokhonwana</span></h1>
-        <p class="hero-role">Ethical hacking <span>·</span> Penetration testing <span>·</span> Threat intelligence</p>
-        <p class="hero-copy">I learn by testing, documenting, and connecting the details. Explore my work across network security, web applications, and threat intelligence.</p>
+        <p class="hero-role">Offensive security <span>·</span> Red-team mindset <span>·</span> Web &amp; network testing</p>
+        <p class="hero-copy">I build practical pentesting skills through hands-on labs, real-world-style attack paths, and clear technical reporting. My work focuses on finding risks, validating them, and turning them into actionable security outcomes.</p>
         <div class="hero-actions">
-          <a class="action-link action-primary" href="#projects">Explore selected work</a>
+          <a class="action-link action-primary" href="#projects">Explore my labs</a>
           <a class="action-link action-secondary" href="https://www.linkedin.com/in/bongani-mokhonwana-588619338" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
         </div>
-        <div class="hero-index" aria-hidden="true"><span>BM / 01</span><span>Independent practice</span></div>
+        <div class="hero-index" aria-hidden="true"><span>BM / 01</span><span>Offensive security</span></div>
       </div>
       <a class="scroll-cue" href="#about"><span>Scroll to explore</span><span aria-hidden="true">↓</span></a>
     </section>
@@ -51,16 +51,16 @@
     <section class="content-section about-section" id="about" aria-labelledby="about-title">
       <div class="page-width section-layout">
         <div class="section-heading reveal">
-          <p class="section-index">01 <span>/</span> About</p>
-          <h2 id="about-title">Curiosity is useful.<br /><span>Evidence is better.</span></h2>
+          <p class="section-index">About</p>
+          <h2 id="about-title">Offensive security is a craft.<br /><span>Evidence makes it credible.</span></h2>
         </div>
         <div class="about-copy reveal">
-          <p class="lead-copy">I'm a cybersecurity practitioner building experience through hands-on labs, structured learning, and careful investigation.</p>
-          <p>My work spans Linux and networking fundamentals, web application testing, password security, social engineering simulations, and system exploitation in controlled environments. I enjoy turning technical exploration into clear notes that others can follow.</p>
+          <p class="lead-copy">I'm a cybersecurity practitioner with a pentester mindset: I map attack paths, validate weaknesses, and document the impact in a way that is practical for defenders.</p>
+          <p>My work covers Linux and network fundamentals, web application testing, privilege escalation, vulnerability analysis, and controlled exploitation in lab environments. I focus on turning technical exploration into structured findings, repeatable workflows, and useful security guidance.</p>
           <div class="about-signals" aria-label="Areas of focus">
-            <span>Network security</span>
+            <span>Network testing</span>
             <span>Web application testing</span>
-            <span>Threat intelligence</span>
+            <span>Vulnerability validation</span>
           </div>
         </div>
       </div>
@@ -69,32 +69,73 @@
     <section class="content-section skills-section" id="skills" aria-labelledby="skills-title">
       <div class="page-width">
         <div class="section-heading reveal">
-          <p class="section-index">02 <span>/</span> Skills</p>
-          <h2 id="skills-title">Tools for asking<br /><span>better questions.</span></h2>
+          <p class="section-index">Capabilities</p>
+          <h2 id="skills-title">The pentester toolkit<br /><span>for discovery and validation.</span></h2>
+          <p>Areas represented across certifications, labs, and training. Course topics reflect training; they are not all claims of professional experience.</p>
         </div>
         <div class="skill-grid">
           <article class="skill-unit reveal">
             <p class="unit-index">01</p>
-            <h3>Network &amp; systems</h3>
-            <p>Linux, networking, virtualization, host discovery, traffic analysis, and command-line workflows.</p>
-            <ul class="tag-list" aria-label="Network and systems tools">
-              <li>Kali Linux</li><li>Nmap</li><li>Wireshark</li><li>tcpdump</li><li>VirtualBox</li>
+            <h3>Vulnerability &amp; endpoint security</h3>
+            <p>Identifying and prioritizing vulnerabilities, assessing endpoints, and understanding detection and response controls.</p>
+            <ul class="tag-list" aria-label="Vulnerability and endpoint security skills">
+              <li>Vulnerability management</li><li>Vulnerability scanning</li><li>Nessus</li><li>Endpoint detection and response (EDR)</li><li>Security assessment</li><li>Risk prioritization</li>
             </ul>
           </article>
           <article class="skill-unit reveal">
             <p class="unit-index">02</p>
-            <h3>Security testing</h3>
-            <p>Methodical testing of web applications, credentials, and systems in authorized lab environments.</p>
-            <ul class="tag-list" aria-label="Security testing tools">
-              <li>Burp Suite</li><li>Metasploit</li><li>Hashcat</li><li>John the Ripper</li>
+            <h3>SOC, SIEM &amp; incident response</h3>
+            <p>Monitoring and investigating security events, analyzing alerts, and learning incident response and threat-hunting workflows.</p>
+            <ul class="tag-list" aria-label="SOC, SIEM, and incident response skills">
+              <li>SOC workflows</li><li>Elastic SIEM</li><li>Elasticsearch</li><li>Alert analysis</li><li>Incident response</li><li>Threat hunting</li><li>Malware traffic analysis</li><li>Endpoint monitoring</li><li>Digital forensics</li>
             </ul>
           </article>
           <article class="skill-unit reveal">
             <p class="unit-index">03</p>
-            <h3>Analysis &amp; automation</h3>
-            <p>Collecting useful signals, documenting findings, and automating repeatable tasks.</p>
-            <ul class="tag-list" aria-label="Analysis and automation skills">
-              <li>Python</li><li>Bash</li><li>OSINT</li><li>Threat intelligence</li><li>Reporting</li>
+            <h3>Network &amp; red-team testing</h3>
+            <p>Structured lab practice in network discovery, penetration-testing methodology, and controlled security testing.</p>
+            <ul class="tag-list" aria-label="Network and red-team testing skills">
+              <li>Linux / Kali</li><li>Nmap</li><li>Wireshark</li><li>tcpdump</li><li>Shodan</li><li>Nessus</li><li>Metasploit</li><li>Burp Suite</li><li>Hashcat</li><li>John the Ripper</li><li>Gobuster</li><li>Red teaming</li><li>Bug bounty</li><li>Vulnerability research</li><li>VirtualBox</li>
+            </ul>
+          </article>
+          <article class="skill-unit reveal">
+            <p class="unit-index">04</p>
+            <h3>OSINT &amp; threat intelligence</h3>
+            <p>Collecting and assessing open-source information, indicators, and threat context to support intelligence and hunting workflows.</p>
+            <ul class="tag-list" aria-label="OSINT and threat intelligence skills">
+              <li>OSINT</li><li>Threat intelligence (CTI)</li><li>MISP</li><li>IOC analysis</li><li>MITRE ATT&amp;CK</li><li>TTP analysis</li><li>Recon-ng</li><li>SpiderFoot</li><li>theHarvester</li><li>Netlas</li><li>Threat &amp; vulnerability management</li>
+            </ul>
+          </article>
+          <article class="skill-unit reveal">
+            <p class="unit-index">05</p>
+            <h3>Web, email &amp; social engineering</h3>
+            <p>Training in web and email defenses, phishing analysis, application trust boundaries, and social-engineering awareness.</p>
+            <ul class="tag-list" aria-label="Web, email, and social engineering skills">
+              <li>Web security</li><li>Email security</li><li>Mimecast</li><li>Phishing analysis</li><li>Social engineering</li><li>Security awareness</li><li>Web architecture</li><li>Trust boundaries</li>
+            </ul>
+          </article>
+          <article class="skill-unit reveal">
+            <p class="unit-index">06</p>
+            <h3>Identity, infrastructure &amp; scripting</h3>
+            <p>Foundational study of identity environments, operating systems, infrastructure, and scripting for repeatable workflows.</p>
+            <ul class="tag-list" aria-label="Identity, infrastructure, and scripting skills">
+              <li>Active Directory</li><li>Domain controllers</li><li>Group Policy</li><li>Linux</li><li>Networking</li><li>Python</li><li>PowerShell</li><li>Bash</li><li>Chisel</li><li>Socat</li><li>extractPorts</li><li>Command and control (C2) concepts</li>
+            </ul>
+          </article>
+          <article class="skill-unit reveal">
+            <p class="unit-index">07</p>
+            <h3>Wireless, mobile &amp; cryptography</h3>
+            <p>Specialist training covering wireless assessment, radio-frequency fundamentals, mobile security, and cryptographic concepts.</p>
+            <ul class="tag-list" aria-label="Wireless, mobile, and cryptography skills">
+              <li>Wi-Fi security</li><li>Aircrack-ng</li><li>WPA2 assessment</li><li>Radio frequency (RF)</li><li>Mobile security</li><li>Cryptography</li><li>Symmetric encryption</li><li>Asymmetric encryption</li><li>SCADA / ICS</li><li>Modbus</li><li>DNP3</li><li>RFID / Proxmark3</li><li>BLE scanning</li><li>Privacy and anonymity</li>
+            </ul>
+          </article>
+          <article class="skill-unit reveal">
+            <p class="unit-index">08</p>
+            <h3>Risk, law &amp; cyber defense</h3>
+            <p>Understanding security priorities and legal context, and applying threat-informed defensive thinking to protect important assets.</p>
+            <ul class="tag-list" aria-label="Risk, legal, and cyber defense skills">
+              <li>Risk management</li><li>Vulnerability prioritization</li><li>Cyberlaw</li><li>Ethical hacking</li><li>Cyber defense</li><li>Cybersecurity fundamentals</li><li>Mission-critical asset protection</li>
             </ul>
           </article>
         </div>
@@ -104,25 +145,49 @@
     <section class="content-section approach-section" id="approach" aria-labelledby="approach-title">
       <div class="page-width">
         <div class="section-heading reveal">
-          <p class="section-index">03 <span>/</span> Approach</p>
-          <h2 id="approach-title">A repeatable way<br /><span>to investigate.</span></h2>
+          <p class="section-index">Methodology</p>
+          <h2 id="approach-title">A disciplined pentest workflow</h2>
         </div>
         <div class="approach-list">
           <article class="approach-row reveal">
             <span class="approach-number">01</span>
-            <h3>Understand the environment</h3>
-            <p>Map what is present, identify trust boundaries, and learn what normal looks like.</p>
+            <h3>Map the target</h3>
+            <p>Identify exposed services, trust boundaries, and the paths attackers would try first. Good recon reduces wasted effort and sharpens the test.</p>
           </article>
           <article class="approach-row reveal">
             <span class="approach-number">02</span>
-            <h3>Test a clear hypothesis</h3>
-            <p>Use a structured process to assess weaknesses and validate what the evidence supports.</p>
+            <h3>Validate the weakness</h3>
+            <p>Probe the most likely attack chains, confirm exploitability, and separate noise from business-impacting issues.</p>
           </article>
           <article class="approach-row reveal">
             <span class="approach-number">03</span>
-            <h3>Make findings useful</h3>
-            <p>Record the path, explain the impact, and leave practical notes for the next person.</p>
+            <h3>Report with evidence</h3>
+            <p>Document the impact, provide a clear remediation path, and leave stakeholders with practical guidance they can implement.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section principles-section" aria-labelledby="principles-title">
+      <div class="page-width">
+        <div class="section-heading reveal">
+          <p class="section-index">Learning principles</p>
+          <h2 id="principles-title">Practice with purpose.</h2>
+          <p>Original reflections on hands-on, ethical security learning.</p>
+        </div>
+        <div class="principles-grid">
+          <blockquote class="principle-card reveal">
+            <p>“A tool is only as useful as the question you ask with it.”</p>
+            <cite>Practice principle / 01</cite>
+          </blockquote>
+          <blockquote class="principle-card reveal">
+            <p>“Build skills in the lab; test real systems only with permission.”</p>
+            <cite>Practice principle / 02</cite>
+          </blockquote>
+          <blockquote class="principle-card reveal">
+            <p>“A finding becomes useful when its evidence leads to a fix.”</p>
+            <cite>Practice principle / 03</cite>
+          </blockquote>
         </div>
       </div>
     </section>
@@ -131,30 +196,19 @@
       <div class="page-width">
         <div class="projects-heading section-heading reveal">
           <div>
-            <p class="section-index">04 <span>/</span> Projects</p>
-            <h2 id="projects-title">Selected work<br /><span>and field notes.</span></h2>
+            <p class="section-index">Labs</p>
+            <h2 id="projects-title">Selected pentest work<br /><span>and security exercises.</span></h2>
           </div>
-          <p class="projects-intro">Labs, courses, and events that show how I approach security problems and keep learning.</p>
+          <p class="projects-intro">Hands-on network, web, and infrastructure engagements that reflect how I practice offensive security. Dates are sourced from the posts; “Completed” is shown only when a post explicitly reports completion.</p>
         </div>
         <div class="project-filters reveal" role="group" aria-label="Filter projects">
           <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">All work</button>
-          <button type="button" class="filter-button" data-filter="lab" aria-pressed="false">Labs</button>
           <button type="button" class="filter-button" data-filter="training" aria-pressed="false">Training</button>
-          <button type="button" class="filter-button" data-filter="intelligence" aria-pressed="false">Intelligence</button>
+          <button type="button" class="filter-button" data-filter="lab" aria-pressed="false">Labs</button>
+          <button type="button" class="filter-button" data-filter="intelligence" aria-pressed="false">Certifications</button>
           <button type="button" class="filter-button" data-filter="event" aria-pressed="false">Events</button>
         </div>
         <div class="project-grid" id="project-grid">
-          <article class="project-card reveal" data-category="lab">
-            <a class="project-link" href="projects/cwe-network-lab.html">
-              <div class="project-image"><img src="images/linux.JPG" alt="Illustration of a Linux user working at a laptop" loading="lazy" /></div>
-              <div class="project-body">
-                <p class="project-meta"><span>Network penetration testing</span><span>Lab / 01</span></p>
-                <h3>CWE Fully Compromised Network Lab</h3>
-                <p>A multi-host assessment covering enumeration, vulnerability analysis, lateral movement, privilege escalation, and network pivoting.</p>
-                <span class="project-cta">Read lab notes <span aria-hidden="true">&rarr;</span></span>
-              </div>
-            </a>
-          </article>
           <article class="project-card reveal" data-category="lab">
             <a class="project-link" href="projects/RealWin_SCADA_Exploitation_PoC.html">
               <div class="project-image"><img src="images/cyber.jpg" alt="Cybersecurity analysis and industrial system assessment" loading="lazy" /></div>
@@ -166,44 +220,68 @@
               </div>
             </a>
           </article>
-          <article class="project-card reveal" data-category="training">
-            <a class="project-link" href="projects/web-app-hacking.html">
-              <div class="project-image"><img src="images/web%20app.png" alt="Web application testing project artwork" loading="lazy" /></div>
+          <article class="project-card reveal" data-category="lab">
+            <a class="project-link" href="projects/nessus-vulnerability-scanning.html">
+              <div class="project-image"><img src="https://pbs.twimg.com/media/HPzNBSWWgAErW0M.jpg" alt="Nessus vulnerability scanning post image" loading="lazy" /></div>
               <div class="project-body">
-                <p class="project-meta"><span>Web application security</span><span>Course / 03</span></p>
-                <h3>Web App Hacking V8, Day 1</h3>
-                <p>Foundational testing concepts, modern application architecture, and the trust boundaries testers need to understand.</p>
-                <span class="project-cta">Read course notes <span aria-hidden="true">&rarr;</span></span>
+                <p class="project-meta"><span>Vulnerability assessment</span><span>Lab / Posted Aug 15, 2026</span></p>
+                <h3>Vulnerability Scanning and Assessment with Nessus</h3>
+                <p>Using Nessus to find vulnerabilities on a network. The original post includes the full image set and archive details.</p>
+                <span class="project-cta">View lab post <span aria-hidden="true">&rarr;</span></span>
               </div>
             </a>
           </article>
-          <article class="project-card reveal" data-category="training">
-            <a class="project-link" href="projects/cwe-training-day-one.html">
-              <div class="project-image"><img src="images/Shodan.jpg" alt="Network reconnaissance interface" loading="lazy" /></div>
+          <article class="project-card reveal" data-category="lab">
+            <a class="project-link" href="projects/honeypot.html">
+              <div class="project-image"><img src="https://pbs.twimg.com/media/HO6Ij-rWoAAHHa3.jpg" alt="Honeypot post image" loading="lazy" /></div>
               <div class="project-body">
-                <p class="project-meta"><span>Penetration testing</span><span>Training / 04</span></p>
-                <h3>CWE Training, Day 1</h3>
-                <p>A structured introduction to scanning, enumeration, vulnerability analysis, and building a repeatable assessment workflow.</p>
-                <span class="project-cta">Read training notes <span aria-hidden="true">&rarr;</span></span>
+                <p class="project-meta"><span>Deception technology</span><span>Lab / Posted Aug 04, 2026</span></p>
+                <h3>honeypot</h3>
+                <p>A hands-on learning post, with all images from the original archive entry.</p>
+                <span class="project-cta">View lab post <span aria-hidden="true">&rarr;</span></span>
+              </div>
+            </a>
+          </article>
+          <article class="project-card reveal" data-category="lab">
+            <a class="project-link" href="projects/active-directory.html">
+              <div class="project-image"><img src="https://pbs.twimg.com/media/HGYGoQ4aMAA6Sn6.jpg?format=jpg&amp;name=4096x4096" alt="Active Directory lab post image" loading="lazy" /></div>
+              <div class="project-body">
+                <p class="project-meta"><span>Identity and access</span><span>Lab / Apr 20–May 22, 2026</span></p>
+                <h3>Active Directory</h3>
+                <p>Four archive posts documenting Active Directory training and lab work, with the original post images.</p>
+                <span class="project-cta">View lab posts <span aria-hidden="true">&rarr;</span></span>
               </div>
             </a>
           </article>
           <article class="project-card reveal" data-category="intelligence">
             <a class="project-link" href="projects/ctia-certification.html">
-              <div class="project-image"><img src="images/cyber.jpg" alt="Cybersecurity analysis and investigation" loading="lazy" /></div>
+              <div class="project-image ctia-logo-panel"><img src="images/certificates/ec-council-ctia-program-logo.webp" alt="EC-Council Certified Threat Intelligence Analyst program logo" loading="lazy" /></div>
               <div class="project-body">
-                <p class="project-meta"><span>Threat intelligence</span><span>Certification / 05</span></p>
-                <h3>Certified Threat Intelligence Analyst</h3>
-                <p>Completed CTIA certification, studying the intelligence lifecycle from planning and collection through analysis and dissemination.</p>
+                <p class="project-meta"><span>Threat intelligence</span><span>In progress / 05</span></p>
+                <h3>EC-Council Certified Threat Intelligence Analyst</h3>
+                <p>In progress: EC-Council Certified Threat Intelligence Analyst, covering the intelligence lifecycle from planning and collection through analysis and dissemination.</p>
                 <span class="project-cta">View certification notes <span aria-hidden="true">&rarr;</span></span>
+              </div>
+            </a>
+          </article>
+          <article class="project-card reveal" data-category="intelligence">
+            <a class="project-link" href="projects/ceh-certification.html">
+              <div class="project-image ceh-badge-panel">
+                <img src="images/certificates/ec-council-ceh-badge.png" alt="EC-Council Certified Ethical Hacker badge" loading="lazy" />
+              </div>
+              <div class="project-body">
+                <p class="project-meta"><span>Ethical hacking</span><span>Issued Oct 2025 / Expires Dec 2028</span></p>
+                <h3>Certified Ethical Hacker (CEH)</h3>
+                <p>EC-Council certification in ethical hacking and penetration testing, focused on assessing security within authorized scope.</p>
+                <span class="project-cta">Explore certification notes <span aria-hidden="true">&rarr;</span></span>
               </div>
             </a>
           </article>
           <article class="project-card reveal" data-category="event">
             <a class="project-link" href="projects/oxcon-2026.html">
-              <div class="project-image"><img src="images/encryption.jpg" alt="Security technology and encryption" loading="lazy" /></div>
+              <div class="project-image oxcon-logo-panel"><img src="images/oxcon-logo.png" alt="OxCon conference logo displayed at the event" loading="lazy" /></div>
               <div class="project-body">
-                <p class="project-meta"><span>Security community</span><span>Conference / 06</span></p>
+                <p class="project-meta"><span>Security community</span><span>Event / Nov 7, 2026</span></p>
                 <h3>OxCon 2026</h3>
                 <p>Conference notes on malware analysis, AI security, email security, and pentesting with AI assistance.</p>
                 <span class="project-cta">View conference notes <span aria-hidden="true">&rarr;</span></span>
@@ -211,44 +289,109 @@
             </a>
           </article>
         </div>
-        <p class="filter-empty" id="filter-empty" hidden>No work in this category yet.</p>
+        <section class="training-posts" id="training-posts" aria-label="Training posts" hidden>
+          <label class="archive-topic-label" for="archive-topic-filter">Browse posts by course or topic</label>
+          <select class="archive-topic-select" id="archive-topic-filter" aria-label="Filter post history by course or topic"></select>
+          <div class="training-post-grid" id="training-post-grid"></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="content-section insights-recordings" id="demos" aria-labelledby="demos-title">
+      <div class="page-width">
+        <div class="projects-heading section-heading reveal">
+          <div>
+            <p class="section-index">Demos</p>
+            <h2 id="demos-title">Lab videos<br /><span>and command practice.</span></h2>
+          </div>
+          <p class="projects-intro">Watch a hands-on training recording, then try sample commands in a browser-only terminal simulation.</p>
+        </div>
+        <div class="recording-grid">
+          <article class="recording-card reveal">
+            <div class="recording-frame">
+              <video controls preload="metadata" playsinline aria-label="Training screen recording from December 18, 2025">
+                <source src="videos/training-recording-2025-12-18.mp4" type="video/mp4" />
+                Your browser does not support the video element.
+              </video>
+            </div>
+            <div class="recording-copy">
+              <p class="project-meta"><span>Training recording</span><span>Dec 18, 2025</span></p>
+              <h3>Hands-on Training Session</h3>
+              <p>A screen recording shared as a learning artifact from practical cybersecurity training.</p>
+            </div>
+          </article>
+          <aside class="recording-note reveal">
+            <p class="section-index">EternalBlue / Lab study</p>
+            <h3>Defensive lessons from an authorized lab</h3>
+            <p>The exploit walkthrough contains reusable commands and target details, so it is not embedded on this public portfolio. The lab study focuses instead on patching MS17-010, disabling SMBv1, network segmentation, and monitoring.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section insights-demo" id="demo-session" aria-labelledby="demo-session-title">
+      <div class="page-width terminal-layout">
+        <div class="section-heading reveal">
+          <p class="section-index">Command session</p>
+          <h2 id="demo-session-title">Practice commands<br /><span>in a safe simulation.</span></h2>
+          <p class="terminal-description">Try <code>help</code>, <code>whoami</code>, <code>ls</code>, or <code>clear</code>. This demo returns sample output only; it does not run commands on your device or connect to any target.</p>
+          <p class="terminal-hint" id="terminal-hint">Available commands: <code>help</code>, <code>whoami</code>, <code>ls</code>, and <code>clear</code>.</p>
+        </div>
+        <div class="terminal-card reveal">
+          <div class="terminal-topbar">
+            <span class="terminal-lights" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span>practice-shell / local simulation</span>
+          </div>
+          <div class="terminal-screen">
+            <div class="terminal-output" id="terminal-output" role="log" aria-live="polite">
+              <p class="terminal-welcome">Welcome. Type <code>help</code> to see available commands.</p>
+            </div>
+            <form class="terminal-form" id="terminal-form">
+              <label for="terminal-input"><span aria-hidden="true">guest@lab:~$</span><span class="visually-hidden">Enter a demo command</span></label>
+              <input id="terminal-input" name="command" type="text" autocomplete="off" spellcheck="false" aria-describedby="terminal-hint" />
+              <button type="submit">Run</button>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="content-section credentials-section" id="credentials" aria-labelledby="credentials-title">
       <div class="page-width credential-layout reveal">
         <div class="section-heading">
-          <p class="section-index">05 <span>/</span> Credentials</p>
+          <p class="section-index">Credentials</p>
           <h2 id="credentials-title">Learning that<br /><span>keeps moving.</span></h2>
         </div>
         <div class="credential-feature">
-          <p class="credential-status"><span class="status-light" aria-hidden="true"></span> Completed</p>
-          <h3>EC-Council Certified Threat Intelligence Analyst</h3>
-          <p>CTIA covers the intelligence lifecycle, including planning, collection, processing, analysis, production, and dissemination.</p>
-          <a class="text-link" href="projects/ctia-certification.html">Explore the certification notes <span aria-hidden="true">&rarr;</span></a>
+          <article class="credential-highlight">
+            <p class="credential-status"><span class="status-light" aria-hidden="true"></span> Completed</p>
+            <h3>EC-Council Certified Ethical Hacker</h3>
+            <p>CEH certification in ethical hacking and penetration testing, earned within authorized scope.</p>
+            <a class="text-link" href="projects/ceh-certification.html">Explore the certification notes <span aria-hidden="true">&rarr;</span></a>
+          </article>
+          <article class="credential-highlight">
+            <p class="credential-status"><span class="status-light" aria-hidden="true"></span> In progress</p>
+            <h3>EC-Council Certified Threat Intelligence Analyst</h3>
+            <p>Currently studying the intelligence lifecycle, including planning, collection, processing, analysis, production, and dissemination.</p>
+            <a class="text-link" href="projects/ctia-certification.html">Explore the certification notes <span aria-hidden="true">&rarr;</span></a>
+          </article>
         </div>
       </div>
       <div class="page-width credential-catalogue">
         <div class="certificate-list-heading">
           <div>
-            <p class="section-index">Additional training</p>
-            <h3>Certificates &amp; credentials</h3>
+            <p class="section-index">40 credentials</p>
+            <h3>Licenses &amp; certifications</h3>
           </div>
-          <p>Ten more credentials across security operations, threat analysis, and security awareness.</p>
+          <p>All 40 licenses and certifications provided from my LinkedIn profile. Dates and skills are shown where supplied.</p>
         </div>
         <div class="certificate-grid">
-           <article class="certificate-card">
-            <span class="certificate-mark" aria-hidden="true">CEH</span>
-            <div class="certificate-card-copy">
-              <p class="certificate-issue">CEH</p>
-              <h4>Certified Ethical Hacker</h4>
-            </div>
-          </article>
           <article class="certificate-card">
             <span class="certificate-mark" aria-hidden="true">TN</span>
             <div class="certificate-card-copy">
               <p class="certificate-issuer">Tenable</p>
               <h4>Tenable MSSP Practitioner</h4>
+              <p class="certificate-date">Skill: Vulnerability Management</p>
             </div>
           </article>
           <article class="certificate-card">
@@ -256,7 +399,6 @@
             <div class="certificate-card-copy">
               <p class="certificate-issuer">Cybereason</p>
               <h4>Certified Security Expert</h4>
-              <a class="certificate-link" href="https://www.linkedin.com/in/bongani-mokhonwana-588619338/overlay/Certifications/1011815306/treasury/?profileId=ACoAAFTPGPgBRokaki1bzYZW0lof1AvDmjki30Q" target="_blank" rel="noopener noreferrer">View credential <span aria-hidden="true">&nearr;</span></a>
             </div>
           </article>
           <article class="certificate-card">
@@ -264,7 +406,7 @@
             <div class="certificate-card-copy">
               <p class="certificate-issuer">Cybereason</p>
               <h4>Certified Incident Responder</h4>
-              <a class="certificate-link" href="https://www.linkedin.com/in/bongani-mokhonwana-588619338/overlay/Certifications/691339365/treasury/?profileId=ACoAAFTPGPgBRokaki1bzYZW0lof1AvDmjki30Q" target="_blank" rel="noopener noreferrer">View credential <span aria-hidden="true">&nearr;</span></a>
+              <p class="certificate-date">Skill: Incident Response</p>
             </div>
           </article>
           <article class="certificate-card">
@@ -272,7 +414,7 @@
             <div class="certificate-card-copy">
               <p class="certificate-issuer">Cybereason</p>
               <h4>Certified Threat Hunter</h4>
-              <a class="certificate-link" href="https://www.linkedin.com/in/bongani-mokhonwana-588619338/overlay/Certifications/471744620/treasury/?profileId=ACoAAFTPGPgBRokaki1bzYZW0lof1AvDmjki30Q" target="_blank" rel="noopener noreferrer">View credential <span aria-hidden="true">&nearr;</span></a>
+              <p class="certificate-date">Skill: Cyber Threat Hunting (CTH)</p>
             </div>
           </article>
           <article class="certificate-card">
@@ -280,7 +422,7 @@
             <div class="certificate-card-copy">
               <p class="certificate-issuer">Cybereason</p>
               <h4>Certified Threat Analyst</h4>
-              <a class="certificate-link" href="https://www.linkedin.com/in/bongani-mokhonwana-588619338/overlay/Certifications/285528126/treasury/?profileId=ACoAAFTPGPgBRokaki1bzYZW0lof1AvDmjki30Q" target="_blank" rel="noopener noreferrer">View credential <span aria-hidden="true">&nearr;</span></a>
+              <p class="certificate-date">Skill: Endpoint Detection and Response (EDR)</p>
             </div>
           </article>
           <article class="certificate-card">
@@ -318,13 +460,50 @@
               <h4>Threat Intelligence Presales</h4>
             </div>
           </article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">MI</span><div class="certificate-card-copy"><p class="certificate-issuer">Mimecast</p><h4>Web Security</h4></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">MI</span><div class="certificate-card-copy"><p class="certificate-issuer">Mimecast</p><h4>Email Security Cloud Gateway</h4></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">EL</span><div class="certificate-card-copy"><p class="certificate-issuer">Elastic</p><h4>Elastic SIEM</h4><p class="certificate-date">Skill: Elasticsearch</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>MITRE ATT&amp;CK for Cybersecurity Analysts</h4><p class="certificate-date">Skills: Matrices, tactics, techniques, and procedures (TTPs)</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Criminal Law for Cybersecurity</h4><p class="certificate-date">Skill: Cyberlaw</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Incident Response Analyst</h4><p class="certificate-date">Skill: Incident Response</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Security+ SY0-701 Bootcamp</h4><p class="certificate-date">Skill: Identify, analyze, and mitigate threats, attacks, and vulnerabilities</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Python Basics for Hackers</h4><p class="certificate-date">Skill: Python programming</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Metasploit Basics for Hackers</h4><p class="certificate-date">Skill: Metasploit</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Remaining Anonymous</h4><p class="certificate-date">Skill: Darkweb operator</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Network Basics for Hackers</h4><p class="certificate-date">Skill: Networking</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Getting Started Becoming a Master Hacker</h4><p class="certificate-date">Skill: Ethical hacking</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Phishing Analysis</h4><p class="certificate-date">Skill: Social engineering</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Nmap for Hackers</h4><p class="certificate-date">Skill: Nmap</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Red Team Operator</h4><p class="certificate-date">Skill: Red teaming</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise <span class="certificate-date">Issued Feb 2026</span></p><h4>Cyber-threat Intelligence and Hunting for Cybersecurity</h4><p class="certificate-date">Skill: Cyber Threat Intelligence (CTI)</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise <span class="certificate-date">Issued Jun 2025</span></p><h4>SOC Analyst Lvl 1</h4><p class="certificate-date">Skills: SIEM and SOC workflows, threat detection, alert analysis, malware traffic analysis, endpoint monitoring, digital forensics, and cyber threat hunting</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Open Source Intelligence</h4><p class="certificate-date">Skill: OSINT</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Wireshark for Cybersecurity</h4><p class="certificate-date">Skill: Wireshark</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Cryptography Basics for Hackers</h4><p class="certificate-date">Skill: Symmetric and asymmetric cryptography</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Wi-Fi Hacking</h4><p class="certificate-date">Skill: WPA2 handshake capture and offline dictionary attack with Aircrack-ng</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Radio Basics for Hackers</h4><p class="certificate-date">Skill: Radio frequency (RF) fundamentals</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Infrastructure Basics for Hackers</h4><p class="certificate-date">Skill: Setting up and operating a command and control (C2) framework</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Cyber Defense from a Military Perspective</h4><p class="certificate-date">Skills: Cyber defense, adversary TTPs, MITRE ATT&amp;CK, threat intelligence, mission-critical asset prioritization</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise <span class="certificate-date">Issued Jun 2026</span></p><h4>Mobile Hacking and Security</h4><p class="certificate-date">Skill: Mobile hacking</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Mr Robot hackers</h4></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Mr Robot Bug bounty</h4><p class="certificate-date">Skill: Vulnerability research</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Active Directory for Hackers</h4><p class="certificate-date">Skill: Active Directory</p></div></article>
+          <article class="certificate-card"><span class="certificate-mark" aria-hidden="true">HA</span><div class="certificate-card-copy"><p class="certificate-issuer">Hackers Arise</p><h4>Linux Basics for Hackers</h4><p class="certificate-date">Skill: Linux</p></div></article>
+          <article class="certificate-card">
+            <span class="certificate-mark" aria-hidden="true">CEH</span>
+            <div class="certificate-card-copy">
+              <p class="certificate-issuer">EC-Council <span class="certificate-date">Issued Oct 2025 · Expires Dec 2028</span></p>
+              <h4>Certified Ethical Hacker (CEH)</h4>
+              <p class="certificate-date">Skill: Penetration testing</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="contact-section" id="contact" aria-labelledby="contact-title">
       <div class="page-width contact-inner reveal">
-        <p class="section-index">06 <span>/</span> Contact</p>
+        <p class="section-index">Contact</p>
         <h2 id="contact-title">Good security starts<br />with a conversation.</h2>
         <p>For cybersecurity opportunities, collaboration, or questions about my work, find me on LinkedIn.</p>
         <div class="contact-actions">
